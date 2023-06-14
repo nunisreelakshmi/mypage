@@ -1,0 +1,6 @@
+---
+- name: deploy through tomcat
+  host: localhost
+  task:
+    -name: copying warfile
+     copy: src=target/SpringRestIntegrationApp-0.0.1-SNAPSHOT.war dest=/root/tomcat10/webapps/myapp.war
